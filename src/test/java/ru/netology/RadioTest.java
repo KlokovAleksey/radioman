@@ -8,9 +8,7 @@ class RadioTest {
     @Test
     public void shouldCurrentStation() {
         Radio radio = new Radio();
-        int number = 5;
-        radio.setCurrentListeningStation(number);
-        assertEquals(number, radio.getCurrentListeningStation());
+        radio.setCurrentListeningStation(0);
+        assertEquals(0,radio.getCurrentListeningStation());
     }
-
 }
