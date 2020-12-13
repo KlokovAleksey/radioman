@@ -85,4 +85,15 @@ class RadioTest {
         radio.pervVolume();
         assertEquals(0, radio.getCurrentVolume());
     }
+
+    @Test
+    void shouldAllArguments() {
+        Radio radio = new Radio(5,10,0,100,10,0);
+        assertEquals(0,radio.getMinVolume());
+        assertEquals(100,radio.getMaxVolume());
+        assertEquals(10,radio.getMaxStation());
+        assertEquals(0,radio.getMinStation());
+        assertEquals(5,radio.getCurrentStation());
+        assertEquals(10,radio.getCurrentVolume());
+    }
 }
